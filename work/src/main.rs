@@ -1,8 +1,10 @@
 fn main() {
-    let array = [30, 20, 30];
-    let mut sum = 0;
-    for num in &array {
-        sum += num;
+    println!("{}", fact(6));
+}
+fn fact(n: i32) -> i32 {
+    if n == 0 {
+        1
+    } else {
+        fact(n - 1) * n
     }
-    assert_eq!(sum, 80);
 }
