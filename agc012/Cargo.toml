@@ -1,0 +1,41 @@
+[package]
+name = "agc012"
+version = "0.1.0"
+edition = "2018"
+
+[package.metadata.cargo-compete.bin]
+agc012-a = { alias = "a", problem = "https://atcoder.jp/contests/agc012/tasks/agc012_a" }
+agc012-b = { alias = "b", problem = "https://atcoder.jp/contests/agc012/tasks/agc012_b" }
+agc012-c = { alias = "c", problem = "https://atcoder.jp/contests/agc012/tasks/agc012_c" }
+agc012-d = { alias = "d", problem = "https://atcoder.jp/contests/agc012/tasks/agc012_d" }
+agc012-e = { alias = "e", problem = "https://atcoder.jp/contests/agc012/tasks/agc012_e" }
+agc012-f = { alias = "f", problem = "https://atcoder.jp/contests/agc012/tasks/agc012_f" }
+
+[[bin]]
+name = "agc012-a"
+path = "src/bin/a.rs"
+
+[[bin]]
+name = "agc012-b"
+path = "src/bin/b.rs"
+
+[[bin]]
+name = "agc012-c"
+path = "src/bin/c.rs"
+
+[[bin]]
+name = "agc012-d"
+path = "src/bin/d.rs"
+
+[[bin]]
+name = "agc012-e"
+path = "src/bin/e.rs"
+
+[[bin]]
+name = "agc012-f"
+path = "src/bin/f.rs"
+
+[dependencies]
+proconio = { version = "=0.4.5", features = ["derive"] }
+
+[dev-dependencies]

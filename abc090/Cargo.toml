@@ -1,0 +1,31 @@
+[package]
+name = "abc090"
+version = "0.1.0"
+edition = "2018"
+
+[package.metadata.cargo-compete.bin]
+abc090-a = { alias = "a", problem = "https://atcoder.jp/contests/abc090/tasks/abc090_a" }
+abc090-b = { alias = "b", problem = "https://atcoder.jp/contests/abc090/tasks/abc090_b" }
+abc090-c = { alias = "c", problem = "https://atcoder.jp/contests/abc090/tasks/arc091_a" }
+abc090-d = { alias = "d", problem = "https://atcoder.jp/contests/abc090/tasks/arc091_b" }
+
+[[bin]]
+name = "abc090-a"
+path = "src/bin/a.rs"
+
+[[bin]]
+name = "abc090-b"
+path = "src/bin/b.rs"
+
+[[bin]]
+name = "abc090-c"
+path = "src/bin/c.rs"
+
+[[bin]]
+name = "abc090-d"
+path = "src/bin/d.rs"
+
+[dependencies]
+proconio = { version = "=0.4.5", features = ["derive"] }
+
+[dev-dependencies]
