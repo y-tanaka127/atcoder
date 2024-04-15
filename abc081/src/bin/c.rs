@@ -19,5 +19,13 @@ fn main() {
         *count += 1;
     }
 
-    println!("{:?}", hash_map);
+    let mut vec:Vec<(&i32,&i32)> = hash_map.iter().collect();
+    vec.sort_by(|a,b| a.1.cmp(&b.1));
+
+    if vec.len() > k {
+        for i in 0..(vec.len() - k){
+            ans += vec[i].1;
+        }
+    }
+    println!("{}", ans);
 }
